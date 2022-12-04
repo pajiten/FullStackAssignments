@@ -73,7 +73,8 @@ class FileHandle {
 public class Assignment1 {
 
 	public static void main(String[] args) {
-
+		System.out.println("Assignment 1 - Core Java - Developer-Jiten ");
+		System.out.println("--------------------------------------------");
 		File dir = new File("C:\\Jiten\\Mxl");
 		if (dir.isDirectory()) {
 
