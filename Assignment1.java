@@ -114,8 +114,9 @@ public class Assignment1 {
 				System.out.println("1. Create");
 				System.out.println("2. Delete");
 				System.out.println("3. Search");
-				System.out.println("4. Exit");
-
+				System.out.println("4. Return to main context");
+				System.out.println("5. Exit Application");
+				
 				int choice = scan.nextInt();
 				switch (choice) {
 				case 1: {
@@ -145,6 +146,11 @@ public class Assignment1 {
 
 					System.out.println("Return to main context");
 					break;
+				}
+				case 5: {
+
+					System.out.println("Application Closed");
+					System.exit(0);
 				}
 				default:
 					throw new IllegalArgumentException("Unexpected value: " + choice);
