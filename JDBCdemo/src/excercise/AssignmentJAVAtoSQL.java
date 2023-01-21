@@ -225,8 +225,16 @@ public class AssignmentJAVAtoSQL {
   	            //show the number of records
   	            stmt = con.createStatement();
   	            
+  	          String query2 = "select count(*) from Customer";
+    	        ResultSet rs2 =  stmt.executeQuery(query2);
+    	            rs2.next();
+    	            int count = rs2.getInt( 1 );
+      	            System.out.println("No of records" + count );
+  	            
   	            String query1 = "select * from Customer";
   	            ResultSet rs =  stmt.executeQuery(query1);
+  	          
+  	            
   	          
   	            System.out.println("Id    Name     OrderNo     City");
   	            
